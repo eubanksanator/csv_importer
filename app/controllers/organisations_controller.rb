@@ -63,7 +63,7 @@ class OrganisationsController < ApplicationController
 
   def import
     Organisation.import(params[:file])
-    redirect_to root_url, notice: "Organisation has been uploaded"
+    redirect_to root_url, notice: "Organisation has been imported"
   end
 
   private
